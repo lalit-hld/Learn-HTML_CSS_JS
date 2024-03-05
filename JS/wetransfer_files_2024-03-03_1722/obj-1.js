@@ -9,6 +9,10 @@ let object = {
                 ]
             }
 
+[
+    { title: "Task 1", completed: false },
+]
+
 
 // Have to find the total no. of products.
 // Average price of the products.
@@ -27,10 +31,11 @@ console.log(`The Average price of the products is: ${Average}`)
 let category = function(input){
     let totalQuantity= 0;
     object.products.forEach(function(i){
-        if{
-            i.category===input;
-            totalQuantity= totalQuantity + i.quantity;
+        if(i.category===input){
+            totalQuantity = totalQuantity + i.quantity;
         }
     })
     console.log(`The total Quantity of ${input} is: ${totalQuantity}.`)
 }
+
+category("Category1");
